@@ -5,10 +5,28 @@
     margin-top: 50px;
 }
 
+.regular-list__item {
+    @media screen and (min-width: 480px) {
+        width: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 60px) / 3);
+    }
+}
+
 .regular-list__link {
     display: flex;
     height: 92px;
-    width: 170px;
+    width: 210px;
+
+    @media screen and (min-width: 748px) {
+        width: 226px;
+    }
+
+    @media screen and (min-width: 748px) {
+        width: 170px;
+    }
 
     @include display($df:null);
 
