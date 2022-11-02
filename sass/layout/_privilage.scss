@@ -1,0 +1,47 @@
+.privilage {
+    padding-bottom: 0;
+}
+
+.privilage-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+
+.privilage__item {
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width: 1600px) {
+        width: calc((100% - 90px) / 4);
+    }
+}
+
+.privilage__item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.privilage__title {
+    @include font(null, 14px, 1.14, null);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+    text-align: center;
+    justify-content: center;
+}
+
+.privilage__text {
+    color: var(--text-color);
+    line-height: 1.71;
+}
+
+.privilage__soc {
+    height: 120px;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+    border-radius: 4px;
+
+    @include display();
+}
