@@ -4,8 +4,6 @@
     flex-direction: column;
     justify-content: space-between;
     overflow: auto;
-
-    position: relative;
 }
 
 .mob-modal__open {
@@ -39,7 +37,7 @@
 
 .backdrop-menu {
     background-color: #ffffff;
-    position: relative;
+    position: fixed;
     top: 0;
     width: 100%;
     height: 100%;
