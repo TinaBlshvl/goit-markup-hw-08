@@ -573,7 +573,8 @@ img {
   border: none;
   border-color: transparent;
   background-color: transparent;
-  margin-left: auto;
+  right: 0;
+  position: absolute;
 }
 @media screen and (min-width: 748px) {
   .mob-modal__open {
@@ -589,6 +590,11 @@ img {
   position: absolute;
   top: 10px;
   right: 15px;
+}
+
+.mob-modal__close:hover,
+.mob-modal__close:focus {
+  fill: var(--accent-color);
 }
 
 .backdrop-menu.is-hidden {
