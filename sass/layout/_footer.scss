@@ -6,7 +6,17 @@
 
 .address-list__address,
 .address-list__mail {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+    @media screen and (min-width: 1200px){
+        margin-bottom: 9px;
+    }
+}
+
+.address-list {
+    margin-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+    }
 }
 
 .address-list__link,
@@ -49,6 +59,11 @@
 .footer-soc__list {
     @include display();
     gap: 10px;
+
+    margin-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+    }
 }
 
 .footer-soc__link {
@@ -83,7 +98,10 @@
 }
 
 .footer>.container {
-    @include display($ai:baseline, $jc:space-between);
+    margin: 0 auto;
+    @media screen and (min-width: 1200px) {
+        @include display($ai: baseline, $jc: space-between);
+    }
 }
 
 .footer-form__email {
@@ -95,6 +113,8 @@
     color: var(--white-color);
 
     padding-left: 16px;
+
+    margin-bottom: 20px;
 }
 
 .footer-form__email::placeholder {

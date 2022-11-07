@@ -1,6 +1,6 @@
 .regular-list {
-    @include display();
-    
+    display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     margin-top: 50px;
 }
@@ -13,6 +13,10 @@
     @media screen and (min-width: 768px) {
         width: calc((100% - 60px) / 3);
     }
+
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 150px) / 6);
+    }
 }
 
 .regular-list__link {
@@ -24,7 +28,7 @@
         width: 226px;
     }
 
-    @media screen and (min-width: 748px) {
+    @media screen and (min-width: 1200px) {
         width: 170px;
     }
 

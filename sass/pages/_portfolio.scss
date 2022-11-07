@@ -1,7 +1,7 @@
-.portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+// .portfolio {
+//     padding-top: 94px;
+//     padding-bottom: 94px;
+// }
 
 .header-nav {
     border-bottom: 1px solid #ECECEC;
@@ -27,6 +27,7 @@
 
 .portfolio-btn__list {
     @include display();
+    flex-wrap: wrap;
     gap: 8px;
     margin-bottom: 50px;
 }
@@ -70,7 +71,6 @@
 .portfolio-cards__item:hover .portfolio-cards__text,
 .portfolio-cards__item:focus .portfolio-cards__text {
     transform: translateY(0);
-    /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .portfolio-content__title {
