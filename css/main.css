@@ -567,6 +567,7 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   overflow: auto;
+  position: relative;
 }
 
 .mob-modal__open {
@@ -586,6 +587,9 @@ img {
   border-color: transparent;
   background-color: transparent;
   padding: 0;
+  position: absolute;
+  top: 10px;
+  right: 15px;
 }
 
 .backdrop-menu {
@@ -1277,6 +1281,11 @@ img {
 
 .footer-icon__svg {
   fill: var(--white-color);
+}
+
+.portfolio {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .header-nav {
