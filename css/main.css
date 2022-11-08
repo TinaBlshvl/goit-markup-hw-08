@@ -1327,6 +1327,12 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .header-nav {
   border-bottom: 1px solid #ECECEC;
@@ -1351,19 +1357,25 @@ img {
 }
 
 .portfolio-btn__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-btn__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 50px;
+  }
 }
 
 .portfolio-cards__item:hover,
@@ -1399,8 +1411,15 @@ img {
   gap: 30px;
 }
 
-.portfolio-cards__item {
-  width: calc((100% - 60px) / 3);
+@media screen and (min-width: 748px) {
+  .portfolio-cards__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-cards__item {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .portfolio-cards__item:hover {

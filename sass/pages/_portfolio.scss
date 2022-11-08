@@ -2,7 +2,10 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-    
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .header-nav {
@@ -28,10 +31,13 @@
 }
 
 .portfolio-btn__list {
-    @include display();
     flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 50px;
+    @media screen and (min-width: 768px) {
+        @include display();
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 50px;
+    }
 }
 
 .portfolio-cards__item:hover,
@@ -63,7 +69,13 @@
 }
 
 .portfolio-cards__item {
-    width: calc((100% - 60px) / 3);
+    @media screen and (min-width: 748px) {
+        width: calc((100% - 30px) / 2);
+    }
+    
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 60px) / 3);
+    }
 }
 
 .portfolio-cards__item:hover {
