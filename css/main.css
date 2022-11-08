@@ -399,6 +399,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .nav {
@@ -436,6 +437,9 @@ img {
   .nav__logo {
     padding-top: 24px;
     padding-bottom: 25px;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
   }
 }
 
@@ -443,17 +447,15 @@ img {
   color: var(--accent-color);
 }
 
-.site-nav,
-.contacts {
+.site-nav {
   display: none;
-  gap: 50px;
 }
 @media screen and (min-width: 748px) {
-  .site-nav,
-.contacts {
+  .site-nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    gap: 50px;
   }
 }
 
@@ -496,15 +498,33 @@ img {
 }
 
 .contacts {
-  display: none;
   margin-left: auto;
-  gap: 50px;
 }
-@media screen and (min-width: 748px) {
+@media screen and (min-width: 768px) {
   .contacts {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 50px;
   }
 }
 
@@ -588,8 +608,11 @@ img {
   background-color: transparent;
   padding: 0;
   position: absolute;
-  top: 10px;
-  right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 21px;
+  right: 25px;
 }
 
 .mob-modal__close:hover,
@@ -601,6 +624,8 @@ img {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  -webkit-transition: opacity 300ms linear, visibility 300ms linear;
+  transition: opacity 300ms linear, visibility 300ms linear;
 }
 
 .backdrop-menu {
@@ -1104,14 +1129,18 @@ img {
 
 .footer__logo {
   color: var(--white-color);
-  margin-right: 0;
-  display: block;
   text-decoration: none;
   font-family: "Raleway", sans-serif;
-  margin-bottom: 20px;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+}
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    margin-right: 0;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
 
 .footer .link:hover,
@@ -1181,9 +1210,6 @@ img {
   margin-bottom: 20px;
 }
 
-.footer > .container {
-  margin: 0 auto;
-}
 @media screen and (min-width: 1200px) {
   .footer > .container {
     display: -webkit-box;

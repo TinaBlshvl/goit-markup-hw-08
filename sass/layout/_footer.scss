@@ -35,16 +35,18 @@
 }
 
 .footer__logo {
-    color: var(--white-color);
-    margin-right: 0;
-    display: block;
-    text-decoration: none;
 
+    color: var(--white-color);
+    text-decoration: none;
     font-family: 'Raleway', sans-serif;
 
-    margin-bottom: 20px;
-
     @include font(700, 26px, 1.19, null);
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 0;
+        display: block;
+        margin-bottom: 20px;
+    }
 }
 
 .footer .link:hover,
@@ -98,7 +100,6 @@
 }
 
 .footer>.container {
-    margin: 0 auto;
     @media screen and (min-width: 1200px) {
         @include display($ai: baseline, $jc: space-between);
     }

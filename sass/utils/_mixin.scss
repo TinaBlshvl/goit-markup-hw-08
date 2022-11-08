@@ -5,7 +5,7 @@
     letter-spacing: $ls;
 }
 
-@mixin display($df:flex, $ai:center, $jc:center, $ta:center) {
+@mixin display($df:flex, $ai:center, $jc:center) {
     display: $df;
     align-items: $ai;
     justify-content: $jc;
