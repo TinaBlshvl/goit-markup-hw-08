@@ -45,7 +45,7 @@
 
 .site-nav {
     display: none;
-    @media screen and (min-width: 748px) {
+    @media screen and (min-width: 768px) {
         display: flex;
         gap: 50px;
     }
@@ -113,12 +113,14 @@
 
 
 .contacts__link {
-    @media screen and (min-width: 748px) {
+    display: none;
+    
+    @media screen and (min-width: 768px) {
         @include font(500, 14px, 1.14, 0.02em);
         text-decoration: none;
         color: var(--text-color);
         display: flex;
-        
+        gap: 10px;
     }
 
     @media screen and (min-width: 1200px) {
