@@ -31,11 +31,12 @@
 }
 
 .portfolio-btn__list {
+    display: flex;
     flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 40px;
     @media screen and (min-width: 768px) {
         @include display();
-        flex-wrap: wrap;
-        gap: 8px;
         margin-bottom: 50px;
     }
 }
@@ -66,10 +67,15 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    @media screen and (max-width: 767px) {
+        width: 450px;
+    }
 }
 
 .portfolio-cards__item {
-    @media screen and (min-width: 748px) {
+    display: flex;
+    align-items: center;
+    @media screen and (min-width: 768px) {
         width: calc((100% - 30px) / 2);
     }
     
