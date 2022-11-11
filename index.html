@@ -156,15 +156,27 @@
                  <h2 class="section__title">Чим ми займаємося</h2>
                  <ul class="about__list">
                     <li class="about__item">
-                        <img src="./imges/box1.jpg" alt="Процес розробки сайту" width="370"/>
+                        <img 
+                        srcset="
+                            ./imges/box1.jpg    1x,
+                            ./imges/box1-2x.jpg 2x"
+                        src="./imges/box1.jpg" alt="Процес розробки сайту" width="370"/>
                         <p class="about__text" >десктопні додатки</p>
                     </li>
                     <li class="about__item">
-                        <img src="./imges/box2.jpg" alt="Людина та телеaон" width="370"/>
+                        <img 
+                        srcset="
+                            ./imges/box2.jpg    1x,
+                            ./imges/box2-2x.jpg 2x"
+                        src="./imges/box2.jpg" alt="Людина та телеaон" width="370"/>
                         <p class="about__text" >мобільні додатки</p>
                     </li>
                     <li class="about__item">
-                        <img src="./imges/box3.jpg" alt="Вибір кольорової палітри" width="370"/>
+                        <img 
+                        srcset="
+                            ./imges/box3.jpg    1x,
+                            ./imges/box3-2x.jpg 2x"
+                        src="./imges/box3.jpg" alt="Вибір кольорової палітри" width="370"/>
                         <p class="about__text" >дизайнерські рішення</p>
                     </li>
                 </ul>
@@ -176,6 +188,32 @@
                     <h2 class="section__title">Наша команда</h2>
                     <ul class="team-list">
                     <li class="team-list__item">
+                        <picture>
+                            <source
+                                srcset="
+                                    ./imges/man1.jpg         1x,
+                                    ./imges/man1-desc-2x.jpg 2x
+                                "
+                                media="(min-width: 1200px)">
+                        </picture>
+
+                        <picture>
+                            <source
+                                srcset="
+                                    ./imges/man1-tab.jpg    1x,
+                                    ./imges/man1-tab-2x.jpg 2x
+                                "
+                                media="(min-width: 768px)">
+                        </picture>
+
+                        <picture>
+                            <source
+                                srcset="
+                                    ./imges/man1-mob.jpg    1x,
+                                    ./imges/man1-mob-2x.jpg 2x
+                                "
+                                media="(max-width: 767px)">
+                        </picture>
                         <img src="./imges/man1.jpg" class="team-list__photo" alt="Дизайнер Ігор" width="450"/>
                         <div class="team-content">
                             <h3 class="team-content__title">Ігор Дем'яненко</h3>
@@ -223,6 +261,32 @@
                     </li>
                     
                     <li class="team-list__item">
+                        <picture>
+                            <source
+                                srcset="
+                                    ./imges/girl.jpg         1x,
+                                    ./imges/girl-desc-2x.jpg 2x
+                                "
+                                media="(min-width: 1200px)">
+                        </picture>
+
+                        <picture>
+                            <source
+                                srcset="
+                                    ./imges/girl-tab.jpg    1x,
+                                    ./imges/girl-tab-2x.jpg 2x
+                                "
+                                media="(min-width: 768px)">
+                        </picture>
+
+                        <picture>
+                            <source
+                                srcset="
+                                    ./imges/girl-mob.jpg    1x,
+                                    ./imges/girl-mob-2x.jpg 2x
+                                "
+                                media="(max-width: 767px)">
+                        </picture>
                         <img src="./imges/girl.jpg" class="team-list__photo" alt="Розробник Ольга" width="450"/>
                         <div class="team-content">
                             <h3 class="team-content__title">Ольга Рєпіна</h3>
@@ -270,6 +334,32 @@
                     </li>
                     
                     <li class="team-list__item">
+                        <picture>
+                            <source
+                                srcset="
+                                    ./imges/man2.jpg         1x,
+                                    ./imges/man2-desc-2x.jpg 2x
+                                "
+                                media="(min-width: 1200px)">
+                        </picture>
+
+                        <picture>
+                            <source
+                                srcset="
+                                    ./imges/man2-tab.jpg    1x,
+                                    ./imges/man2-tab-2x.jpg 2x
+                                "
+                                media="(min-width: 768px)">
+                        </picture>
+
+                        <picture>
+                            <source
+                                srcset="
+                                    ./imges/man2-mob.jpg    1x,
+                                    ./imges/man2-mob-2x.jpg 2x
+                                "
+                                media="(max-width: 767px)">
+                        </picture>
                         <img src="./imges/man2.jpg" class="team-list__photo" alt="Маркетолог Микола" width="450"/>
                         <div class="team-content">
                             <h3 class="team-content__title">Микола Тарасов</h3>
@@ -317,6 +407,32 @@
                     </li>
                     
                     <li class="team-list__item">
+                        <picture>
+                            <source
+                                srcset="
+                                    ./imges/man3.jpg         1x,
+                                    ./imges/man3-desc-2x.jpg 2x
+                                "
+                                media="(min-width: 1200px)">
+                        </picture>
+
+                        <picture>
+                            <source
+                                srcset="
+                                    ./imges/man3-tab.jpg    1x,
+                                    ./imges/man3-tab-2x.jpg 2x
+                                "
+                                media="(min-width: 768px)">
+                        </picture>
+
+                        <picture>
+                            <source
+                                srcset="
+                                    ./imges/man3-mob.jpg    1x,
+                                    ./imges/man3-mob-2x.jpg 2x
+                                "
+                                media="(max-width: 767px)">
+                        </picture>
                         <img src="./imges/man3.jpg" class="team-list__photo" alt="Дизайнер Михайло" width="450"/>
                         <div class="team-content">
                             <h3 class="team-content__title">Михайло Єрмаков</h3>

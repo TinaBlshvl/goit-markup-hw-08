@@ -75,6 +75,11 @@ img {
   padding-right: 15px;
   margin: 0 auto;
 }
+@media screen and (min-width: 320px) {
+  .container {
+    width: 290px;
+  }
+}
 @media screen and (min-width: 480px) {
   .container {
     width: 450px;
@@ -536,7 +541,7 @@ img {
 @media screen and (min-width: 768px) {
   .contacts__link {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
@@ -561,7 +566,7 @@ img {
     gap: 10px;
     padding: 24px 0;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
   }
@@ -609,7 +614,6 @@ img {
   border-color: transparent;
   background-color: transparent;
   padding: 0;
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
