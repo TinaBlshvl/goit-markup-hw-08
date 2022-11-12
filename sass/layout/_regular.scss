@@ -24,14 +24,6 @@
     height: 92px;
     width: 100%;
 
-    // @media screen and (min-width: 748px) {
-    //     width: 226px;
-    // }
-
-    // @media screen and (min-width: 1200px) {
-    //     width: 170px;
-    // }
-
     @include display($df:null);
 
     border: 1px solid #AFB1B8;

@@ -52,6 +52,10 @@
     width: 100%;
     height: 100%;
 
+    // @media screen and (max-width: 479px) {
+    //     padding: 40px 40px;
+    // }
+
     padding: 48px 40px;
 
     z-index: 1;
@@ -62,6 +66,9 @@
 }
 
 .mob-nav__link {
+    @media screen and (max-width: 479px) {
+      @include font(500, 35px, 1.17, 0.02em);  
+    }
     @include font(500, 40px, 1.17, 0.02em);
     color: var(--title-text-color);
 
@@ -82,6 +89,9 @@
 }
 
 .mob-tel {
+    @media screen and (max-width: 479px) {
+       @include font(500, 24px, 1.17, 0.02em); 
+    }
     @include font(500, 34px, 1.17, 0.02em);
     color: var(--accent-color);
 }
@@ -101,9 +111,13 @@
 
 .mob-soc {
     display: flex;
+    gap: 15px;
 }
 
 .mob-soc__link {
+    @media screen and (max-width: 479px) {
+        @include font(500, 11px, 1.22, 0.02em);
+    }
     @include font(500, 18px, 1.22, 0.02em);
     color: var(--accent-color);
 }
@@ -113,6 +127,9 @@
     width: 22px;
     border: 1px solid rgba(33, 33, 33, 0.2);
 
+    @media screen and (max-width: 479px) {
+        display: none;
+    }
     margin-right: 10px;
     margin-left: 10px;
 }
