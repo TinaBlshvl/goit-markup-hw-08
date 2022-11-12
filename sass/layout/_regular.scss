@@ -6,9 +6,9 @@
 }
 
 .regular-list__item {
-    @media screen and (max-width: 767px) {
-        width: calc((100% - 30px) / 2);
-    }
+    // @media screen and (max-width: 767px) {
+    //     width: calc((100% - 30px) / 2);
+    // }
 
     @media screen and (min-width: 768px) {
         width: calc((100% - 60px) / 3);
@@ -22,7 +22,7 @@
 .regular-list__link {
     display: flex;
     height: 92px;
-    width: 210px;
+    width: 100%;
 
     @media screen and (min-width: 748px) {
         width: 226px;
