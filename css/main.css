@@ -1082,16 +1082,6 @@ img {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 748px) {
-  .regular-list__link {
-    width: 226px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .regular-list__link {
-    width: 170px;
-  }
-}
 
 .regular-list__icon {
   fill: currentColor;
