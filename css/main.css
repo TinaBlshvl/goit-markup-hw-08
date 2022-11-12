@@ -405,6 +405,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  width: 100%;
 }
 
 .nav {
@@ -781,6 +782,15 @@ img {
   margin-right: auto;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .hero__title {
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    max-width: 696px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero__title {
     font-weight: 900;
@@ -844,6 +854,9 @@ img {
   gap: 30px;
 }
 
+.privilage__item {
+  width: 100%;
+}
 @media screen and (min-width: 768px) {
   .privilage__item {
     width: calc((100% - 30px) / 2);
@@ -949,6 +962,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .team-list__item {
@@ -1040,7 +1054,7 @@ img {
   margin-top: 50px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .regular-list__item {
     width: calc((100% - 30px) / 2);
   }
@@ -1097,6 +1111,8 @@ img {
 
 .footer {
   background-color: #2F303A;
+  width: 100%;
+  margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -1350,6 +1366,11 @@ img {
   color: var(--white-color);
   padding-left: 16px;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 479px) {
+  .footer-form__email {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-form__email {
