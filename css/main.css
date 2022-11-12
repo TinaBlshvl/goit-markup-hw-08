@@ -614,6 +614,7 @@ img {
   display: flex;
   top: 21px;
   right: 25px;
+  position: absolute;
 }
 
 .mob-modal__close:hover,
