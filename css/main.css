@@ -138,6 +138,11 @@ img {
           transform: translate(-50%, -50%);
   padding: 40px;
 }
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 290px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
@@ -190,6 +195,11 @@ img {
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 12px;
+}
+@media screen and (max-width: 479px) {
+  .modal-title {
+    font-size: 16px;
+  }
 }
 
 .modal-label {
