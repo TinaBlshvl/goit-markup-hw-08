@@ -65,13 +65,13 @@
     color: var(--white-color);
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
+    margin-bottom: 20px;
 
     @include font(700, 26px, 1.19, null);
 
     @media screen and (min-width: 1200px) {
         margin-right: 0;
         display: block;
-        margin-bottom: 20px;
     }
 }
 
@@ -108,11 +108,10 @@
 }
 .footer-icons {
     @media screen and (max-width: 1199px) {
-        flex-direction: column;
         text-align: center;
-        @include display();
     }
 }
+
 .footer-soc__icon {
     fill: var(--white-color);
 }
