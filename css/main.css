@@ -1475,11 +1475,6 @@ img {
   fill: var(--white-color);
 }
 
-.portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .header-nav {
   border-bottom: 1px solid #ECECEC;
 }
